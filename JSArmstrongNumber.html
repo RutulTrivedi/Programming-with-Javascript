@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var num = parseInt(prompt("Enter number  : "));
+    var numOfDigits = 0;
+    var temp = num;
+
+    while(num>1){
+        numOfDigits += 1;
+        num=num/10;
+    }
+    num = temp;
+    var sum = 0;
+
+    while(num>1){
+        sum=sum + Math.pow(parseInt(num%10),numOfDigits);
+        num=num/10;
+    }
+    if(temp == sum){
+        console.log("Number is Armstrong number.");
+    }
+    else{
+        console.log("Number is not Armstrong number.");
+    }
+</script>
+</html>
