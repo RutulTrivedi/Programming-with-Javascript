@@ -1,0 +1,29 @@
+<!-- Checking whether the string is a palindrome or not. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Palindrome</title>
+</head>
+<body>
+    <script>
+        // Taking sttring input
+        var str = prompt("Enter the string");
+        str = str.toLowerCase();
+        var len = str.length;
+        var ans = checkPalindome();
+        alert(ans);
+        
+        // Function to check palindrome
+        function checkPalindome(){
+            for(let i=0;i<len/2;i++){
+                if(str[i] != str[len-1-i]){
+                    return 'It is not a palindrome.';
+                }
+            }
+            return 'It is a palindrome.';
+        }
+    </script>
+</body>
+</html>
