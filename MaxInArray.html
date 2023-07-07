@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        len = parseInt(prompt("Enter array length : "));
+        arr = [len];
+        for(i=0;i<len;i++){
+            arr[i] = prompt("Enter element "+(i+1)+" : ")
+        }
+        max = arr[0];
+        for(i=0;i<len;i++){
+            if(arr[i] >= max){
+                max = arr[i];
+            }
+        }
+        document.write("Highest in array is "+max+".");
+    </script>
+</body>
+</html>
