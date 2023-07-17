@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //Spread operator with array
+    var arr1 = [1,2,3,4,5];
+    var arr2 = [6,7,8,9,10];
+    var arr = [...arr1,...arr2];
+
+    console.log(arr1);
+    console.log(arr2);
+    console.log(arr);
+
+    //Spread operator with object
+    s1 = {
+        name : "abc",
+        age : "19",
+        semester : "5"
+    }
+
+    s2 = {
+        name : "xyz",
+        age : "20",
+        semester : "6"
+    }
+
+    s = {...s1,age:"50",s2};
+
+    console.log(s);
+    a="10"
+    b=5;
+    console.log(b+ +a);
+</script>
+</html>
