@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr = [1,2,3,4,5]
+
+        //checks whether number is present in array or not // true or false
+        var ans1 = arr.includes(3);
+        console.log(ans1);
+
+        //returns the first element from the array which satisfies the condition
+        var ans2 = arr.find((temp)=>{
+            if(temp > 3){
+                return true;
+            }
+        })
+        console.log(ans2);
+
+        //returns the array of elements which satifies the condition
+        var ans3 = arr.filter((temp)=>{
+            if(temp > 2){
+                return true;
+            }
+        })
+        console.log(ans3);
+
+        //returns true if even a single element satisfies the condition // OR gate
+        var ans4 = arr.some((temp)=>{
+            if(temp > 4){
+                return true;
+            }
+        })
+        console.log(ans4);
+
+        //returns true if and only if all elements satisfies the condition //AND gate
+        var ans5 = arr.every((temp)=>{
+            if(temp > 4){
+                return true;
+            }
+        })
+        console.log(ans5);
+    </script>
+    <ul>
+        <script>
+            //map method for ES6
+            a = ["rutul","abhi","hensi"];
+
+            newA = a.map((temp)=>{
+                return '<li>'+temp+'</li>';
+            })
+            document.write(newA.join(""));
+        </script>
+    </ul>
+    <script>
+        //loop using foreach
+        b = [1,2,3,4,5];
+        rk = b.forEach(element => {
+            console.log(element);
+        });
+    </script>
+</body>
+</html>
