@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr = [1,3,5,2,6,7,4];
+
+        document.write("Original array : "+arr+"<br><br>")
+
+        //PUSH add the element at the end of an array
+        arr.push(8);
+        document.write("Array after pushing 8 : "+arr+"<br><br>");
+
+        //UNSHIFT add the element at the beginning of an array
+        arr.unshift(0);
+        document.write("Array after unshifting 0 : "+arr+"<br><br>");
+
+        //POP delete the element from the end of an array and returns it
+        temp1 = arr.pop();
+        document.write("Array after poping element from last : "+arr+"<br>");
+        document.write("Deleted element from last : "+temp1+"<br><br>");
+
+        //POP delete the element from the beginning of an array and returns it
+        temp2= arr.shift();
+        document.write("Array after poping element from beginning : "+arr+"<br>");
+        document.write("Deleted element from beginning : "+temp2+"<br><br>");
+
+        //SORT sorts the array in ascending/descending order of alphabetical order
+        arr.sort((a,b)=>b-a);
+        document.write("Array after sorting in descending order : "+arr+"<br><br>");
+        arr.sort((a,b)=>a-b);
+        document.write("Array after sorting in ascening order : "+arr+"<br><br>");
+
+        //REVERSE reverses the array
+        arr.reverse();
+        document.write("Reversed array : "+arr+"<br><br>");
+
+        //SLICE returns an array from given first index to given (last index - 1)
+        arr2 = arr.slice(3,6);
+        document.write("Slice array from index 3 to 6 : "+arr2+"<br><br>");
+
+        //JOIN joins the all elements of an array in a single string with given symbol in bracket
+        arr4 = arr.join("+");
+        document.write("Joined array : "+arr4+"<br><br>");
+
+        //SPLICE returns an array from given index till next elements specified in second parameter
+        hensi = ['h','e','n','s','i','k','a','v','a','r'];
+        arr3 = hensi.splice(2,4);
+        document.write("Spliced array from index 2 to next 4 elements : "+arr3+"<br><br>");
+    </script>
+</body>
+</html>
